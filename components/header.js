@@ -1,15 +1,18 @@
+import Link from 'next/link'
+
 export default function Header() {
     return (
         <header className="text-gray-900 body-font">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-                   href="/">
+                <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+                      href="/" passHref>
                     <span className="text-xl">Hauke</span>
-                </a>
+                </Link>
                 <nav
                     className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
 
-                    <a aria-label="GitHub" className="block flex items-center hover:text-gray-700 mr-5"
+                    <a aria-label="GitHub" target="_blank" rel="noreferrer"
+                       className="block flex items-center hover:text-gray-700 mr-5"
                        href="https://github.com/hauketoenjes">
                         <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fab"
                              data-icon="github" className="svg-inline--fa fa-github fa-w-16" role="img"
@@ -19,7 +22,8 @@ export default function Header() {
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Twitter" className="block flex items-center hover:text-gray-700 mr-5"
+                    <a aria-label="Twitter" target="_blank" rel="noreferrer"
+                       className="block flex items-center hover:text-gray-700 mr-5"
                        href="https://twitter.com/hauketoenjes">
                         <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fab"
                              data-icon="twitter" className="svg-inline--fa fa-twitter fa-w-16" role="img"
@@ -29,7 +33,8 @@ export default function Header() {
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="GitLab" className="block flex items-center hover:text-gray-700"
+                    <a aria-label="GitLab" target="_blank" rel="noreferrer"
+                       className="block flex items-center hover:text-gray-700"
                        href="https://gitlab.com/hauketoenjes">
                         <svg width="24" height="24" aria-hidden="true" focusable="false" data-icon="gitlab"
                              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -39,7 +44,7 @@ export default function Header() {
                         </svg>
                     </a>
                 </nav>
-                <a className="mt-3 hover:bg-gray-100 rounded-xl px-4 py-2" href="/impressum">Impressum</a>
+                <Link className="mt-3 hover:bg-gray-100 rounded-xl px-4 py-2" href="/impressum">Impressum</Link>
             </div>
         </header>
     )

@@ -20,7 +20,7 @@ export default function Hero() {
                 </p>
 
                 <div className="flex items-center justify-center">
-                    <a href="mailto:kontakt@htoenjes.de" target="_blank"
+                    <a href="mailto:kontakt@htoenjes.de" rel="noreferrer" target="_blank"
                        className=" text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded-xl text-base px-6 py-3 text-center">
                         Kontakt
                     </a>

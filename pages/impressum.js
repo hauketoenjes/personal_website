@@ -23,6 +23,7 @@ export default function Impressum() {
                         <h2>Kontakt</h2>
                         <p>
                             <a href="mailto:impressum@htoenjes.de"
+                               rel="noreferrer"
                                target="_blank">
                                 impressum@htoenjes.de
                             </a>
