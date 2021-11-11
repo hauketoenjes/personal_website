@@ -11,12 +11,6 @@ FROM node:alpine AS builder
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
-
-# Workaround for https://github.com/webpack/webpack/issues/14532
-# and https://github.com/vercel/next.js/issues/30078
-# FIX as soon as this issue is resolved
-ENV NODE_OPTIONS --openssl-legacy-provider
-
 RUN yarn build && yarn install --production --ignore-scripts --prefer-offline
 
 # Production image, copy all the files and run next
