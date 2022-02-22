@@ -30,7 +30,7 @@ export default function Projects() {
                     />
                     <ProjectCard
                         imgSrc={responsiveGridList}
-                        title="repsonsive_grid_list"
+                        title="responsive_grid_list"
                         description="Pub.dev Dart package zum Erstellen von automatischen Rastern für verschieden Gerätegrößen."
                         language="Dart"
                         linkText="pub.dev"
