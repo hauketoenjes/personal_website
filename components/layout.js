@@ -2,18 +2,18 @@ import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
 
-export default function Layout({children}) {
-    return (
-        <div>
-            <Head>
-                <title>Hauke Tönjes</title>
-            </Head>
+export default function Layout({ children }) {
+  return (
+    <div>
+      <Head>
+        <title>Hauke Tönjes</title>
+      </Head>
 
-            <Header/>
+      <Header />
 
-            {children}
+      {children}
 
-            <Footer/>
-        </div>
-    )
+      <Footer />
+    </div>
+  );
 }
