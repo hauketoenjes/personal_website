@@ -1,12 +1,12 @@
+import Image from 'next/image'
 import Button from './button'
-import CloudflareImage from './cloudflare_image'
 
 export default function ProjectCard({ imgSrc, title, description, language, link, linkText }) {
     return (
         <div className="shadow-md border border-neutral-700 rounded-lg mb-5 flex flex-col">
 
             <div className="h-48 relative">
-                <CloudflareImage layout="fill" placeholder="blur" className="rounded-t-lg object-cover" src={imgSrc} alt="Projekt Bild" />
+                <Image layout="fill" placeholder="blur" className="rounded-t-lg object-cover" src={imgSrc} alt="Projekt Bild" />
             </div>
 
             <div className="p-5 flex-1 flex flex-col">

@@ -1,5 +1,5 @@
+import Image from 'next/image'
 import profilePicture from '../public/profile-image.jpg'
-import CloudflareImage from './cloudflare_image'
 
 export default function Hero() {
     return (
@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="container px-4 lg:px-12 2xl:px-56 mx-auto">
 
                 <div className="mx-auto relative h-48 w-48 mb-10">
-                    <CloudflareImage layout="fill" className="object-cover rounded-full" src={profilePicture}
+                    <Image layout="fill" className="object-cover rounded-full" src={profilePicture}
                         alt="Profilbild" />
                 </div>
 
