@@ -1,6 +1,7 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
 
-class MyDocument extends Document {
+class MyDocument extends NextDocument {
   render() {
     return (
       <Html lang="de">
