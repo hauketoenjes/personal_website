@@ -33,6 +33,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Idea folder
 .idea
 
+# Environment file
 .env
+
+# next-sitemap files
+public/sitemap*.xml
+public/robots.txt
