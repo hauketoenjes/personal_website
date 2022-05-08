@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-button {
+  @apply hover:bg-neutral-800 font-semibold rounded-xl px-2 py-2 text-center cursor-pointer;
+}

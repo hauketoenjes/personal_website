@@ -11,6 +11,7 @@ export default function Hero() {
             className="object-cover rounded-full"
             src={profilePicture}
             alt="Profilbild"
+            priority
           />
         </div>
 

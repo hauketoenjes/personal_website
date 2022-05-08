@@ -1,4 +1,4 @@
-import ProjectCard from "./project_card";
+import ProjectCard from "./project-card";
 import covidpassImg from "../public/covidpass.png";
 import responsiveGridList from "../public/responsive_grid_list.png";
 import ovImg from "../public//ov_epaper.jpg";
@@ -33,41 +33,45 @@ export default function Projects() {
             title="CovidPass"
             description="Web-App zum Hinzufügen des digitalen Impfausweises zum Apple Wallet."
             language="Next.js"
-            linkText="GitHub"
-            link="https://github.com/covidpass-org/covidpass"
+            hrefLabel="GitHub"
+            href="https://github.com/covidpass-org/covidpass"
+            ariaLabel="GitHub"
           />
           <ProjectCard
             imgSrc={responsiveGridList}
             title="responsive_grid_list"
             description="Pub.dev Dart package zum Erstellen von automatischen Rastern für verschieden Gerätegrößen."
             language="Dart"
-            linkText="pub.dev"
-            link="https://pub.dev/packages/responsive_grid_list"
+            hrefLabel="pub.dev"
+            href="https://pub.dev/packages/responsive_grid_list"
+            ariaLabel="pub.dev"
           />
           <ProjectCard
             imgSrc={ovImg}
             title="ov_epaper"
-            description="CLI Tool zum Herunterladen der Oldenburgischen Volkszeitung ohne Login oder Abo.
-                                Das Tool funktioniert, weil die Zeitung hinter vorhersagbaren URLs als Bild gespeichert wird."
+            description="CLI Tool zum Herunterladen der Oldenburgischen Volkszeitung ohne Login oder Abo. Das Tool funktioniert, weil die Zeitung hinter vorhersagbaren URLs als Bild gespeichert wird."
             language="Dart"
-            linkText="GitHub"
-            link="https://github.com/hauketoenjes/ov_epaper"
+            hrefLabel="GitHub"
+            href="https://github.com/hauketoenjes/ov_epaper"
+            ariaLabel="GitHub"
           />
           <ProjectCard
             imgSrc={mplanImg}
             title="MPLAN Webinterface"
             description="Webinterface zum Erstellen von Messdienerplänen."
             language="Flutter"
-            linkText="GitHub"
-            link="https://github.com/hauketoenjes/messdienerplan_webinterface"
+            hrefLabel="GitHub"
+            href="https://github.com/hauketoenjes/messdienerplan_webinterface"
+            ariaLabel="GitHub"
           />
           <ProjectCard
             imgSrc={mapiImg}
             title="MPLAN API"
             description="API zum Erstellen von Messdienerplänen"
             language="Python"
-            linkText="GitHub"
-            link="https://github.com/hauketoenjes/messdienerplan_api"
+            hrefLabel="GitHub"
+            href="https://github.com/hauketoenjes/messdienerplan_api"
+            ariaLabel="GitHub"
           />
         </div>
       </div>
