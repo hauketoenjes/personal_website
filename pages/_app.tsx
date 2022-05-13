@@ -8,17 +8,18 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import Layout from "../components/layout";
 
 library.add(faTwitter, faLinkedin, faGithub);
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <Layout>
       <DefaultSeo
         title="Hauke Tönjes"
         description="Persönliche Internetseite von Hauke Tönjes."
       />
       <Component {...pageProps} />
-    </>
+    </Layout>
   );
 }

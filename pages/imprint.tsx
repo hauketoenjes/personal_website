@@ -1,14 +1,6 @@
-import Layout from "../components/layout";
-import { NextSeo } from "next-seo";
-
 export default function Imprint() {
   return (
-    <Layout>
-      <NextSeo
-        title="Hauke Tönjes"
-        description="Persönliche Internetseite von Hauke Tönjes."
-      />
-
+    <>
       <main className="prose prose-invert mx-auto px-8">
         <h1>Impressum</h1>
 
@@ -96,6 +88,6 @@ export default function Imprint() {
           </a>
         </p>
       </main>
-    </Layout>
+    </>
   );
 }
