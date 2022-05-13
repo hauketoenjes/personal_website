@@ -5,13 +5,13 @@ export default function Hero() {
   return (
     <section className="my-16">
       <div className="container px-4 lg:px-12 2xl:px-56 mx-auto">
-        <div className="mx-auto relative h-48 w-48 mb-10">
+        <div className="mx-auto relative h-48 w-48 mb-10 rounded-full overflow-hidden">
           <Image
             layout="fill"
-            className="object-cover rounded-full"
+            objectFit="cover"
+            placeholder="blur"
             src={profilePicture}
             alt="Profilbild"
-            priority
           />
         </div>
 
