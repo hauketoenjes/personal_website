@@ -10,15 +10,16 @@ export type Post = {
     name: string;
   };
   content: string;
-  ogImage: string;
-  coverImage: string;
   excerpt: string;
 };
 
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs(): string[] {
-  return fs.readdirSync(postsDirectory);
+  const postSlugs = fs.readdirSync(postsDirectory);
+  return postSlugs
+    .filter((fileName) => fileName.endsWith(".md"))
+    .filter((fileName) => fileName !== "template.md");
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []): Post {
@@ -46,7 +47,7 @@ export function getPostBySlug(slug: string, fields: string[] = []): Post {
   return items;
 }
 
-export function getAllPosts(fields = []): Post[] {
+export function getAllPosts(fields: string[] = []): Post[] {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))

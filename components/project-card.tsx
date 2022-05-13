@@ -21,7 +21,7 @@ export default function ProjectCard({
   ariaLabel,
 }: ProjectCardProps) {
   return (
-    <div className="shadow-md border border-neutral-700 rounded-lg mb-5 flex flex-col">
+    <div className="border border-neutral-700 rounded-lg mb-5 flex flex-col">
       <div className="h-48 relative">
         <Image
           layout="fill"

@@ -1,7 +1,10 @@
+import { NextSeo } from "next-seo";
+
 export default function Imprint() {
   return (
     <>
-      <main className="prose prose-invert mx-auto px-8">
+      <NextSeo title="Impressum" />
+      <main className="prose lg:prose-lg lg:max-w-[1024px] prose-invert mx-auto px-8 mt-4">
         <h1>Impressum</h1>
 
         <h2>Angaben gemäß § 5 TMG</h2>

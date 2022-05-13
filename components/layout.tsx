@@ -7,10 +7,10 @@ export type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Header />
-      {children}
+      <div className="flex-grow">{children}</div>
       <Footer />
-    </>
+    </div>
   );
 }
