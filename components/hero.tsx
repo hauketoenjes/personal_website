@@ -8,10 +8,12 @@ export default function Hero() {
         <div className="mx-auto relative h-48 w-48 mb-10 rounded-full overflow-hidden">
           <Image
             layout="fill"
+            sizes="12rem"
             objectFit="cover"
             placeholder="blur"
             src={profilePicture}
             alt="Profilbild"
+            priority
           />
         </div>
 
