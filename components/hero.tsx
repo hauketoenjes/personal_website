@@ -9,6 +9,7 @@ export default function Hero() {
           <Image
             width={192}
             height={192}
+            className="transition-all"
             sizes="12rem"
             objectFit="cover"
             placeholder="blur"

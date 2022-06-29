@@ -22,11 +22,12 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="shadow-md border border-neutral-700 rounded-lg mb-5 flex flex-col">
-      <div className="h-48 relative">
+      <div className="h-48 relative rounded-t-lg overflow-hidden">
         <Image
           layout="fill"
           placeholder="blur"
-          className="rounded-t-lg object-cover"
+          className="transition-all"
+          objectFit="cover"
           src={imgSrc}
           alt="Projekt Bild"
         />
