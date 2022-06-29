@@ -7,7 +7,8 @@ export default function Hero() {
       <div className="container px-4 lg:px-12 2xl:px-56 mx-auto">
         <div className="mx-auto relative h-48 w-48 mb-10 rounded-full overflow-hidden">
           <Image
-            layout="fill"
+            width={192}
+            height={192}
             sizes="12rem"
             objectFit="cover"
             placeholder="blur"
