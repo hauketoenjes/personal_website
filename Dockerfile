@@ -18,20 +18,23 @@ RUN yarn build && yarn install --production --ignore-scripts --prefer-offline
 FROM gcr.io/distroless/nodejs:16 AS runner
 WORKDIR /app
 
-ENV NODE_ENV production
-
-# You only need to copy next.config.js if you are NOT using the default configuration
-# COPY --from=builder /app/next.config.js ./
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-
-EXPOSE 3000
-
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry.
 ENV NEXT_TELEMETRY_DISABLED 1
+ENV NODE_ENV production
 
-CMD ["./node_modules/next/dist/bin/next", "start"]
+# You only need to copy next.config.js if you are NOT using the default configuration
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/package.json ./package.json
+
+# Automatically leverage output traces to reduce image size 
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder  /app/.next/standalone ./
+COPY --from=builder  /app/.next/static ./.next/static
+
+ENV PORT 3000
+EXPOSE 3000
+
+CMD ["server.js"]
