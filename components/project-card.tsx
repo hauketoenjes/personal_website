@@ -26,7 +26,7 @@ export default function ProjectCard({
         <Image
           layout="fill"
           placeholder="blur"
-          className="transition-all"
+          className="transition-all rounded-t-lg"
           objectFit="cover"
           src={imgSrc}
           alt="Projekt Bild"
