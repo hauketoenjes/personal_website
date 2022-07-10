@@ -1,6 +1,9 @@
+import { NextSeo } from "next-seo";
+
 export default function Imprint() {
   return (
     <>
+      <NextSeo title="Impressum" />
       <main className="prose prose-invert mx-auto px-8">
         <h1>Impressum</h1>
 
