@@ -42,3 +42,6 @@ yarn-error.log*
 # next-sitemap files
 public/sitemap*.xml
 public/robots.txt
+
+# Log files
+.pnpm-debug.log*
