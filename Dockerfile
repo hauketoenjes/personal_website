@@ -14,7 +14,7 @@ ARG SITE_URL
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
-RUN pnpm build && pnpm install --frozen-lockfile --prod
+RUN pnpm build && pnpm generate-sitemap && pnpm install --frozen-lockfile --prod
 
 # Production image, copy all the files and run next
 FROM node:16-alpine AS runner
