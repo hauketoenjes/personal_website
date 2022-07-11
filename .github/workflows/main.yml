@@ -41,11 +41,9 @@ jobs:
       -
         name: Build and push
         uses: docker/build-push-action@v3
-        env:
-          SITE_URL: ${{ secrets.SITE_URL }}
         with:
           build-args: |
-            SITE_URL
+            SITE_URL=https://htoenjes.de
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
