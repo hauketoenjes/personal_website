@@ -11,17 +11,23 @@ export default function Header() {
         </Link>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-neutral-400 flex flex-wrap items-center text-base justify-center space-x-2">
           <Button ariaLabel="GitHub" href="https://github.com/hauketoenjes">
-            <FontAwesomeIcon className="text-2xl" icon={["fab", "github"]} />
+            <FontAwesomeIcon
+              className="text-2xl align-middle"
+              icon={["fab", "github"]}
+            />
           </Button>
           <Button ariaLabel="Twitter" href="https://twitter.com/hauketoenjes">
-            <FontAwesomeIcon className="text-2xl" icon={["fab", "twitter"]} />
+            <FontAwesomeIcon
+              className="text-2xl align-middle"
+              icon={["fab", "twitter"]}
+            />
           </Button>
           <Button
             ariaLabel="LinkedIn"
             href="https://www.linkedin.com/in/hauke-t%C3%B6njes-139a8a16b/"
           >
             <FontAwesomeIcon
-              className="text-2xl w-6 h-6"
+              className="text-2xl align-middle"
               icon={["fab", "linkedin"]}
             />
           </Button>

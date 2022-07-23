@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <Layout>
       <DefaultSeo
         defaultTitle="Hauke Tönjes"
-        titleTemplate="Hauke Tönjes | %s"
+        titleTemplate="%s | Hauke Tönjes"
         description="Persönliche Internetseite von Hauke Tönjes. Informationen zu Projekten und Kontakt."
       />
       <Component {...pageProps} />
