@@ -1,3 +1,9 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import Button from "./button";
@@ -13,13 +19,13 @@ export default function Header() {
           <Button ariaLabel="GitHub" href="https://github.com/hauketoenjes">
             <FontAwesomeIcon
               className="text-2xl align-middle"
-              icon={["fab", "github"]}
+              icon={faGithub as IconProp}
             />
           </Button>
           <Button ariaLabel="Twitter" href="https://twitter.com/hauketoenjes">
             <FontAwesomeIcon
               className="text-2xl align-middle"
-              icon={["fab", "twitter"]}
+              icon={faTwitter as IconProp}
             />
           </Button>
           <Button
@@ -28,7 +34,7 @@ export default function Header() {
           >
             <FontAwesomeIcon
               className="text-2xl align-middle"
-              icon={["fab", "linkedin"]}
+              icon={faLinkedin as IconProp}
             />
           </Button>
         </nav>
