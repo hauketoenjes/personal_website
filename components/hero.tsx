@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePicture from "../public/profile-image.jpg";
+import profilePicture from "../public/profile-image.jpeg";
 
 export default function Hero() {
   return (
@@ -10,7 +10,7 @@ export default function Hero() {
             width={192}
             height={192}
             className="transition-all rounded-full"
-            sizes="12rem"
+            sizes="10rem"
             objectFit="cover"
             placeholder="blur"
             src={profilePicture}
