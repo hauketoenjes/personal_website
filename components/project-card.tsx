@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/future/image";
 import Button from "./button";
 
 export type ProjectCardProps = {
@@ -22,12 +22,11 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="shadow-md border border-neutral-700 rounded-lg mb-5 flex flex-col">
-      <div className="h-48 relative rounded-t-lg overflow-hidden">
+      <div className="h-48 relative">
         <Image
-          layout="fill"
+          fill
           placeholder="blur"
-          className="transition-all rounded-t-lg"
-          objectFit="cover"
+          className="rounded-t-lg object-cover"
           src={imgSrc}
           alt="Projekt Bild"
         />

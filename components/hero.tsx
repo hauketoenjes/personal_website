@@ -1,17 +1,16 @@
-import Image from "next/image";
+import Image from "next/future/image";
 import profilePicture from "../public/profile-image.jpeg";
 
 export default function Hero() {
   return (
     <section className="my-16">
       <div className="container px-4 lg:px-12 2xl:px-56 mx-auto">
-        <div className="mx-auto relative h-48 w-48 mb-10 rounded-full overflow-hidden">
+        <div className="mx-auto relative h-48 w-48 mb-10">
           <Image
             width={192}
             height={192}
-            className="transition-all rounded-full"
+            className="rounded-full object-cover"
             sizes="10rem"
-            objectFit="cover"
             placeholder="blur"
             src={profilePicture}
             alt="Profilbild"
