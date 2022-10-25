@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/future/image";
+import Image, { StaticImageData } from "next/image";
 import Button from "./button";
 
 export type ProjectCardProps = {

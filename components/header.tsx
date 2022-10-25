@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link href="/" passHref>
+        <Link href="/">
           <span className="text-xl font-semibold custom-button">Hauke</span>
         </Link>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-neutral-400 flex flex-wrap items-center text-base justify-center space-x-2">
@@ -38,7 +38,7 @@ export default function Header() {
             />
           </Button>
         </nav>
-        <Link href="/imprint" passHref>
+        <Link href="/imprint">
           <div className="font-semibold custom-button">Impressum</div>
         </Link>
       </div>

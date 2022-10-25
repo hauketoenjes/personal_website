@@ -1,9 +1,9 @@
-import { NextSeo } from "next-seo";
+import DocumentTitle from "../../components/document-title";
 
-export default function Imprint() {
+export default function Page() {
   return (
     <>
-      <NextSeo title="Impressum" />
+      <DocumentTitle title="Impressum | Hauke Tönjes" />
       <main className="prose prose-invert mx-auto px-8">
         <h1>Impressum</h1>
 
