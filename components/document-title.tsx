@@ -9,7 +9,6 @@ export type DocumentTitleProps = {
 // TODO: Workaround until nextjs fixes the use of head with client side routing and server side components
 export default function DocumentTitle({ title }: DocumentTitleProps) {
   useEffect(() => {
-    console.log(title);
     document.title = title;
   });
 
