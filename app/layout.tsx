@@ -13,6 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Persönliche Internetseite von Hauke Tönjes. Informationen zu Projekten und Kontakt."
+        />
+      </head>
       <body className="bg-neutral-900 text-neutral-100">
         <Header />
         {children}
