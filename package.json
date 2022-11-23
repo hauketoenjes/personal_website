@@ -4,6 +4,7 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
+    "run:prod": "next build && next start",
     "generate-sitemap": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
     "lint": "next lint"

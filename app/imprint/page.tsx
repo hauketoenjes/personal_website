@@ -1,9 +1,6 @@
-import DocumentTitle from "../../components/document-title";
-
 export default function Page() {
   return (
     <>
-      <DocumentTitle title="Impressum | Hauke Tönjes" />
       <main className="prose prose-invert mx-auto px-8">
         <h1>Impressum</h1>
 
