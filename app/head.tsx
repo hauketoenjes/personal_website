@@ -2,9 +2,5 @@ import { NextSeo } from "next-seo";
 import { NEXT_SEO_DEFAULT } from "../next-seo.config";
 
 export default function Head() {
-  return (
-    <head>
-      <NextSeo {...NEXT_SEO_DEFAULT} />
-    </head>
-  );
+  return <NextSeo {...NEXT_SEO_DEFAULT} />;
 }
