@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Impressum",
+};
+
 export default function Page() {
   return (
     <>

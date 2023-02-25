@@ -1,9 +1,9 @@
+import covidpassImg from "../public/img/covidpass.png";
+import mapiImg from "../public/img/mapi.png";
+import mplanImg from "../public/img/mplan_screenshot.png";
+import ovImg from "../public/img/ov_epaper.jpg";
+import responsiveGridList from "../public/img/responsive_grid_list.png";
 import ProjectCard from "./project-card";
-import covidpassImg from "../public/covidpass.png";
-import responsiveGridList from "../public/responsive_grid_list.png";
-import ovImg from "../public//ov_epaper.jpg";
-import mplanImg from "../public/mplan_screenshot.png";
-import mapiImg from "../public/mapi.png";
 
 export default function Projects() {
   return (

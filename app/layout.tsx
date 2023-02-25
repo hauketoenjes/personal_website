@@ -6,6 +6,44 @@ import "../styles/globals.css";
 
 config.autoAddCss = false;
 
+export const metadata = {
+  title: {
+    default: "Hauke Tönjes",
+    template: "%s | Hauke Tönjes",
+  },
+  keywords: [
+    "Hauke Tönjes",
+    "Webentwicklung",
+    "Appentwicklung",
+    "React",
+    "Next.js",
+    "Flutter",
+  ],
+  themeColor: "#171717",
+  colorScheme: "dark",
+  creator: "Hauke Tönjes",
+  publisher: "Hauke Tönjes",
+  description:
+    "Persönliche Internetseite von Hauke Tönjes. Informationen zu Projekten und Kontakt.",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      {
+        sizes: "32x32",
+        url: "/favicon-32x32.png",
+      },
+      {
+        sizes: "16x16",
+        url: "/favicon-16x16.png",
+      },
+    ],
+    apple: {
+      sizes: "180x180",
+      url: "/apple-touch-icon.png",
+    },
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -13,10 +51,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-      </head>
       <body className="bg-neutral-900 text-neutral-100">
         <Header />
         {children}
