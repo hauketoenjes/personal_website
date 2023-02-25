@@ -17,14 +17,11 @@ export default function Header() {
         </Link>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-neutral-400 flex flex-wrap items-center text-base justify-center space-x-2">
           <Button ariaLabel="GitHub" href="https://github.com/hauketoenjes">
-            <FontAwesomeIcon
-              className="text-2xl align-middle"
-              icon={faGithub as IconProp}
-            />
+            <FontAwesomeIcon className="text-2xl" icon={faGithub as IconProp} />
           </Button>
           <Button ariaLabel="Twitter" href="https://twitter.com/hauketoenjes">
             <FontAwesomeIcon
-              className="text-2xl align-middle"
+              className="text-2xl"
               icon={faTwitter as IconProp}
             />
           </Button>
@@ -33,7 +30,7 @@ export default function Header() {
             href="https://www.linkedin.com/in/hauke-t%C3%B6njes-139a8a16b/"
           >
             <FontAwesomeIcon
-              className="text-2xl align-middle"
+              className="text-2xl"
               icon={faLinkedin as IconProp}
             />
           </Button>
