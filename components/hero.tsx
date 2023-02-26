@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Balancer from "react-wrap-balancer";
 import profilePicture from "../public/img/profile-image.jpeg";
 
 export default function Hero() {
@@ -22,17 +23,19 @@ export default function Hero() {
           Hauke Tönjes
         </h1>
         <p className="text-neutral-400 prose-lg text-center mb-10">
-          Hi, ich bin Hauke, Flutter App Developer im{" "}
-          <a
-            className="text-blue-500"
-            href="https://digihub.grimme.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GRIMME DigiHub
-          </a>
-          . In meiner Freizeit arbeite ich an privaten Projekten oder schaue
-          Raketen beim Starten zu.
+          <Balancer>
+            Hi, ich bin Hauke, Flutter App Developer im{" "}
+            <a
+              className="text-blue-500"
+              href="https://digihub.grimme.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GRIMME DigiHub
+            </a>
+            . In meiner Freizeit arbeite ich an privaten Projekten oder schaue
+            Raketen beim Starten zu.
+          </Balancer>
         </p>
 
         <div className="flex items-center justify-center">

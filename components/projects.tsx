@@ -1,3 +1,4 @@
+import Balancer from "react-wrap-balancer";
 import covidpassImg from "../public/img/covidpass.png";
 import mapiImg from "../public/img/mapi.png";
 import mplanImg from "../public/img/mplan_screenshot.png";
@@ -14,17 +15,19 @@ export default function Projects() {
         </h1>
 
         <p className="text-neutral-400 prose-lg text-center mb-10">
-          Eine Auswahl einiger meiner Projekte. Weitere Projekte kann man auf
-          <a
-            className="text-blue-500"
-            href="https://github.com/hauketoenjes"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            GitHub
-          </a>{" "}
-          finden.
+          <Balancer>
+            Eine Auswahl einiger meiner Projekte. Weitere Projekte kann man auf
+            <a
+              className="text-blue-500"
+              href="https://github.com/hauketoenjes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              GitHub
+            </a>{" "}
+            finden.
+          </Balancer>
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
