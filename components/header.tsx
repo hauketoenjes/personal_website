@@ -27,7 +27,7 @@ export default function Header() {
           </Button>
           <Button
             ariaLabel="LinkedIn"
-            href="https://www.linkedin.com/in/hauke-t%C3%B6njes-139a8a16b/"
+            href="https://www.linkedin.com/in/hauketoenjes/"
           >
             <FontAwesomeIcon
               className="text-2xl"
