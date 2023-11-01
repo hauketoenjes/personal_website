@@ -6,9 +6,6 @@
 const nextConfig = {
   output: "standalone",
   swcMinify: true,
-  experimental: {
-    appDir: true,
-  },
 };
 
 module.exports = nextConfig;
