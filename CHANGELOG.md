@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/hauketoenjes/personal_website/compare/v1.0.0...v1.0.1) (2023-11-01)
+
+
+### Bug Fixes
+
+* Release pipeline trigger ([#11](https://github.com/hauketoenjes/personal_website/issues/11)) ([5caa11b](https://github.com/hauketoenjes/personal_website/commit/5caa11b78d4da65c539b6993741a5bcf91179729))
+
 ## 1.0.0 (2023-11-01)
 
 
