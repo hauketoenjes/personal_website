@@ -1,12 +1,13 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Metadata } from "next";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import "../styles/globals.css";
 
 config.autoAddCss = false;
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: "Hauke Tönjes",
     template: "%s | Hauke Tönjes",
