@@ -1,12 +1,18 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Metadata, Viewport } from "next";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import "../styles/globals.css";
 
 config.autoAddCss = false;
 
-export const metadata = {
+export const viewport: Viewport = {
+  themeColor: "#171717",
+  colorScheme: "dark",
+};
+
+export const metadata: Metadata = {
   title: {
     default: "Hauke Tönjes",
     template: "%s | Hauke Tönjes",
@@ -19,8 +25,7 @@ export const metadata = {
     "Next.js",
     "Flutter",
   ],
-  themeColor: "#171717",
-  colorScheme: "dark",
+
   creator: "Hauke Tönjes",
   publisher: "Hauke Tönjes",
   description:
